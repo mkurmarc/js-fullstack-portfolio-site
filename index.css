@@ -46,7 +46,7 @@ html {
     font-size: 18px;
 }
 
-.index {
+body {
     /* background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 79%); 1st iteration*/
     /* background-image: linear-gradient(315deg,#14557b 0%,  #65a19a 70%); */ /* 2nd iteration */
     /* background-image: linear-gradient(315deg,#14557bd2 0%,  #65a19a 90%); */
@@ -522,10 +522,9 @@ h2 {
 }
 
 /****** EFFECTS ******/
-/* .thick:hover {
-    text-decoration: solid underline whitesmoke 3px;
-} */
-
+.hidden {
+    display: none;
+}
 /* ########  CHANGE QUERIES TO EM SIZE, NOT PX OR REM  ######### */
 /****** ONLY MEDIA QUERIES ******/
 
