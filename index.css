@@ -509,7 +509,7 @@ h2 {
 }
     /* bible quote footer item */
 .footer-item:first-child {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 500;
     word-spacing: 2.25px;
     line-height: 1.5;
