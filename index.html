@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&
             family=Rubik:wght@300;400;500&family=Raleway:wght@200;300;400;500&
             family=Castoro&family=Roboto+Mono:wght@300;400;500&Roboto+Mono:wght
@@ -37,13 +38,13 @@
 
             </p>
             <p id="see-projects">
-              <a href="#projects-section">See Projects</a>
+              <a href="#projects">See Projects</a>
               <!-- img tag? for down arrow icon. Also, both text and logo link to some place -->
             </p>
           </div>
           <div class="header-item">
             <img
-              src="/images/building-websites.svg"
+              src="images/building-websites.svg"
               alt="simple illustration of 3 people building a giant web browser"
               id="building-websites"
             />
@@ -55,26 +56,25 @@
             </div>
           </div>
         </header>
-        <section class="projects-section">
+        <section class="projects">
           <div class="projects-container">
             <h2>Featured Projects</h2>
             <!-- first featured project -->
             <div class="project-item">
-              <div class="project-info project-info1">
-                <h3>Name of Project One</h3>
+              <div class="project-info">
+                <h3 onclick="toggleProjectDetails()">Horse Race Forecasting with Machine Learning</h3>
                 <img
-                  src="/images/chevron-down.png"
+                  src="images/chevron-down.png"
                   alt="arrow to expand details of project 1"
                   class="expand-arrow"
                 />
               </div>
               <!-- collapsable/hidden project info section below -->
-  
-              <div class="hidden-proj-info">
+              <div class="hidden-proj-info" id="projInfo1">
                 <div class="hidden-proj-item">
                   <div>
                     <img
-                      src="/images/project-business-plan-design.jpg"
+                      src="images/project-business-plan-design.jpg"
                       alt=""
                       class="demo-gif"
                     />
@@ -121,16 +121,16 @@
               <div class="project-info">
                 <h3>Name of Project Two</h3>
                 <img
-                  src="/images/chevron-down.png"
+                  src="images/chevron-down.png"
                   alt="arrow to expand details of project 2"
                   class="expand-arrow"
                 />
               </div>
-              <div class="hidden-proj-info hidden">
+              <div class="hidden-proj-info" id="hidden-details1">
                 <div class="hidden-proj-item">
                   <div>
                     <img
-                      src="/images/project-business-plan-design.jpg"
+                      src="images/project-business-plan-design.jpg"
                       alt=""
                       class="demo-gif"
                     />
@@ -177,7 +177,7 @@
               <div class="project-info">
                 <h3>Name of Project Three</h3>
                 <img
-                  src="/images/chevron-down.png"
+                  src="images/chevron-down.png"
                   alt="arrow to expand details of project 3"
                   class="expand-arrow"
                 />
@@ -186,7 +186,7 @@
                 <div class="hidden-proj-item">
                   <div>
                     <img
-                      src="/images/project-business-plan-design.jpg"
+                      src="images/project-business-plan-design.jpg"
                       alt=""
                       class="demo-gif"
                     />
@@ -232,7 +232,7 @@
         </section>
         <div class="divider">
           <img
-            src="/images/medium_pattern_stitch.svg"
+            src="images/medium_pattern_stitch.svg"
             alt="illustration of a computer desk in a home workspace"
           />
         </div>
@@ -259,7 +259,7 @@
         </div>
       </footer>
 
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
