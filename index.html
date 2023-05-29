@@ -7,11 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&
             family=Rubik:wght@300;400;500&family=Raleway:wght@200;300;400;500&
             family=Castoro&family=Roboto+Mono:wght@300;400;500&Roboto+Mono:wght
-            @100;200;300;400&display=swap"
+            @100;200;300;400&family=&Playfair:wght@300;400;500;600;700;800;900display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="/styles/index.css" />
@@ -19,42 +18,43 @@
 </head>
 
 <body class="work">
-  <nav class="nav-section">
-    <ul class="nav-container">
-        <li class="nav-item"><a href="/" class="nav-link active">Work</a></li>
-        <li class="nav-item"><a href="/about" class="nav-link active">About</a></li>
+  <nav class="nav">
+    <ul class="nav__container">
+        <li class="nav__link"><a href="/" class="nav--underline">Work</a></li>
+        <li class="nav__link"><a href="/about" class="nav--underline">About</a></li>
     </ul>
   </nav>
   <main class="main">
-      <header class="header-container">
-        <div class="header-item">
-          <h6>Welcome, I'm Marc Rios</h6>
-          <h1>A Full-Stack Software Engineer from Los Angeles</h1>
-          <p>
+      <header class="header">
+        <div class="header__item">
+          <h6 class="header__intro">Welcome, I'm Marc Rios</h6>
+          <h1 class="header__headline">A Software Engineer from the West.</h1>
+          <p class="header__bio">
             I enjoy building complete web applications with JavaScript and Python.
             I design the user interface, plan the backend, code the app, test, and
             put it into production. 
-
           </p>
-          <p id="see-projects">
-            <a href="#projects">See Projects</a>
+          <p class="header__view-projects">
+            <a href="#projects">View Projects</a>
           </p>
         </div>
-        <div class="header-item">
-          <img
-            src="images/building-websites.svg"
-            alt="simple illustration of 3 people building a giant web browser"
-            id="building-websites"
-          />
-          <div>
-            <p id="games-gallery-cta">Outdoors is my playground. Learn more</p>
-            <p id="cta-link-cont">
+        <div class="header__item">
+          <div class="image-container">
+            <img
+              src="images/building-websites.svg"
+              alt="simple illustration of 3 people building a giant web browser"
+              class="header__image"
+            />
+          </div>
+          <div class="header__teaser">
+            <p class="header__teaser-text">The outdoors are my playground. Learn more</p>
+            <p class="header__about-me">
               <a href="/about/">about me</a>
             </p>
           </div>
         </div>
       </header>
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="projects-container">
           <h2>Featured Projects</h2>
           <!-- first featured project -->
