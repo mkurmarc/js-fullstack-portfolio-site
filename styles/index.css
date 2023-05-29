@@ -89,7 +89,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 2.2em;
-    
+    padding-left: 0;
 }
 
 .nav-item {   
@@ -153,7 +153,7 @@ h1 {
     margin-top: 1em;
 }
 
-    /* p tag eith link under image; cta means 'call to action' */
+/* p tag eith link under image; cta means 'call to action' */
 #games-gallery-cta { 
     font-size: 0.75em;
     text-align: center;
