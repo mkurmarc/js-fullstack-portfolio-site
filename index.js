@@ -1,21 +1,31 @@
 "use strict";
 
-// const arrow = document.querySelector('.project-info1');
+const projectTitles = document.querySelectorAll(".projects__project-title");
 
-const projectTitles = document.querySelectorAll(".project-info");
+const hiddenSections = document.querySelectorAll(
+  ".projects__hidden-details-container"
+);
 
-const hiddenSections = document.querySelectorAll(".hidden-proj-info");
-
-for (let i = 0; i < projectTitles.length; i++) {
-  const projClassList = hiddenSections[i].classList;
-
-  projectTitles[i].addEventListener("click", function () {
+projectTitles.forEach((projectTitle) => {
+  projectTitle.addEventListener("click", function () {
+    const projClassList = projectTitle.nextElementSibling.classList;
     if (projClassList.contains("hidden")) {
       projClassList.remove("hidden");
     } else {
       projClassList.add("hidden");
     }
   });
-}
+});
 
-// return the background color used on this website https://eamonnlavelle.com/about.html    #f5f5f5
+// Below is the for loop version of the above forEach loop
+// for (let i = 0; i < projectTitles.length; i++) {
+//   const projClassList = hiddenSections[i].classList;
+
+//   projectTitles[i].addEventListener("click", function () {
+//     if (projClassList.contains("hidden")) {
+//       projClassList.remove("hidden");
+//     } else {
+//       projClassList.add("hidden");
+//     }
+//   });
+// }

@@ -255,21 +255,18 @@ a {
     width: 100%;
     justify-content: center;
     margin-bottom: 7em;
-}
-
-.projects-container {
     display: flex;
     flex-direction: column;
 }
 
-.projects-container__title {
+.projects__title {
     font-family: 'Castoro', serif;
     font-size: 3.1em;
     padding-bottom: 0.6em;
     font-weight: 600;
 }
 
-.projects-container__item {
+.projects__item {
     height: auto;
     border-top: 2px dotted rgb(37, 37, 37);
     padding: 2.25em 0 2.25em 0;
@@ -279,61 +276,62 @@ a {
 .project-item:last-child {
     border-bottom: 2px dotted rgb(37, 37, 37);
 }
-    /* info container */
+
 /*** maybe add flex shrink so the image shrinks at a slower rate than the text */    
-.project-info {
+.projects__project-title {
     display: flex;
     justify-content: space-between;
 }
-    /* project title */
-.project-info > h3 {
+
+.projects__project-title > h3 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     font-size: 2.6em;
     color: whitesmoke;
-
 }
 
-.expand-arrow {
-    margin: 10px 5px 0 0;
-    height: 30px;
-    width: 30px;
+.projects__project-title-arrow {
+    margin: 1.1em 1em 0 0;
+    height: 2.2em;
+    width: 2.2em;
 }
-    /* hidden info section container */
-.hidden-proj-info {
+
+.projects__hidden-details-container {
     display: flex;
     margin: 2rem 1rem 1rem 1rem;
     /* flex-wrap: wrap; */
 }
 
-.hidden-proj-item {
+.projects__hidden-details {
     max-width: 50%;
 }
 
-.hidden-proj-info > .hidden-proj-item:last-child {
+.projects__hidden-details-container > .projects__hidden-details:last-child {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.tech-specs {
+.projects__tech-specs-container {
     display: flex;
     justify-content: space-evenly;
 }
-    /* tech-specs is the container for the uls */
-.tech-specs ul {
-    display: inline-block;
+
+.projects__tech-specs {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     line-height: 1.5;
 }
-    /* titles of unordered lists */
-.tech-specs ul li:first-child {
-    font-weight: 500;
-    
+
+.projects__tech-specs-title {
+    font-size: 1.1em;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    list-style: none;
 }
+
     /* project description */
-.hidden-proj-item > p {
+.projects__hidden-details > p {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     word-spacing: 1px;
@@ -342,7 +340,7 @@ a {
     padding: 0 2em 0 1.7em;
 }
     /* container for links to proj demo, live, ... */
-.proj-links {
+.projects__links-container {
     list-style: none;
     text-align: center;
     display: flex;
@@ -350,29 +348,27 @@ a {
     padding-top: 0.75em;
 }
     
-.link-item {
+.projects__link {
     color: whitesmoke;
     letter-spacing: 1.5px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
 }
-    /* img gif of project demo */
-.demo-gif {
+
+.projects__demo-gif {
     width: 100%;
     height: 25%;
     cursor: pointer;
 }
 
-
 /****** DIVIDER ******/
 .divider {
-    width: 62em;
+    width: 100%;
     margin: auto;
 }
     /* the criss-cross design */
-.divider img {
-    width: 62em;
-    display: block;
+.divider__image {
+    width: 100%;
     margin: auto;
 }
 
@@ -403,113 +399,20 @@ a {
     letter-spacing: 0.75px;
 }
 
-
-/****** MY PROJECTS PAGE ******/
-.my-projects {
-    background-color: #7772A4;
-}
-
-.my-projects-section {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 7em;
-}
-
-.my-projects-container {
-    display: flex;
-    flex-flow: column wrap;
-    flex-basis: 62em;        
-}
-
-.my-project-item {
-    max-width: 62em;
-    height: auto;
-    border-top: 2px dotted rgb(37, 37, 37);
-    padding: 2.25em 0 2.25em 0;
-}
-
-.my-project-item:last-child {
-    border-bottom: 2px dotted rgb(37, 37, 37);
-}
-
-.my-project-info {
-    display: flex;
-    justify-content: space-between;
-}
-    /* project title */
-.my-project-info > h3 {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    font-size: 2.6em;
-    color: whitesmoke;
-
-}
-
-.my-projects-title {
-    display: flex;
-    flex-direction: column;
-    gap: 30px 0;
-    margin-top: 5.2em;
-    width: 50%;
-}
-
-.my-projects-title p {
-    font-family: 'Raleway', sans-serif;
-    line-height: 2;
-    font-size: 0.9em;
-    word-spacing: 2px;
-    letter-spacing: 0.45px;
-    font-weight:500;
-}
-
-.my-projects-title h2 {
-    padding-bottom: 0;
-    font-size: 4.5em;
-}
-
-    /* hidden info section container */
-.my-hidden-proj-info {
-    display: flex;
-    margin: 2rem 1rem 1rem 1rem;
-    /* flex-wrap: wrap; */
-}
-
-.my-hidden-proj-item {
-    max-width: 50%;
-}
-
-.my-hidden-proj-info > .my-hidden-proj-item:last-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* project description */
-.my-hidden-proj-item > p {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    word-spacing: 1px;
-    line-height: 2.5;
-    font-size: 0.95em;
-    padding: 0 2em 0 1.7em;
-}
-
-
 /****** FOOTER ******/
 .footer {
     display: flex;
     justify-content: center;
-    padding: 6.75em 0 3rem 0;
+    margin: 6.75em 0 3rem 0;
 }
-.footer-container {
+.footer__container {
     display: flex;
     justify-content: space-between;
-    width: 62em;
-    flex-wrap: wrap;
-    text-align: left;
+    width: 100%;
+    /* flex-wrap: wrap; */
 }
 
-.footer-item {
+.footer__item {
     width: 20rem;
     height: 10rem;
     font-family: 'Raleway', sans-serif;
@@ -518,17 +421,18 @@ a {
     letter-spacing: 0.75px;
 }
 
-.footer-item > p {
-    padding-top: 10px;
-}
-
-.footer-item > h5 {
+.footer__item-header {
     font-family: 'Castoro', serif;
     font-size: 1.25em;
     color: rgb(44, 44, 44);
 }
-    /* bible quote footer item */
-.footer-item:first-child {
+
+.footer__item > p {
+    padding-top: 10px;
+}
+
+/* bible quote footer item */
+.footer__item:first-child {
     font-size: 0.9em;
     font-weight: 500;
     word-spacing: 2.25px;
@@ -536,7 +440,7 @@ a {
     color: rgb(44, 43, 43);
 }
 
-.footer-item:first-child > p {
+.footer__item:first-child > p {
     margin-top: 2px;
     padding-top: 0;
 }
@@ -545,6 +449,7 @@ a {
 .hidden {
     display: none;
 }
+
 /* ########  CHANGE QUERIES TO EM SIZE, NOT PX OR REM  ######### */
 /****** ONLY MEDIA QUERIES ******/
 
@@ -560,7 +465,7 @@ a {
 }
 
 @media (max-width: 45em) {
-    .project-info > h3 {
+    .projects__project-title > h3 {
         font-size: 1.7rem;
     }
 
@@ -573,27 +478,27 @@ a {
         max-height: 90%;    
     } 
 
-    .hidden-proj-info > p {
+    .projects__hidden-details-container > p {
         font-size: 0.8em;
     }
 }
 
 @media (max-width: 46.06em) {
-    .hidden-proj-info {
+    .projects__hidden-details-container {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .hidden-proj-item {
+    .projects__hidden-details {
         max-width: 80%;
         height: auto;
     }
 
-    .hidden-proj-item > p {
+    .projects__hidden-details > p {
         padding: 1.1em 0.5em;
     }
 
-    .tech-specs {
+    .projects__tech-specs-container {
         justify-content: space-between;
     }
 }
