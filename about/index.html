@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link to index.css in about diectory -->
     <link rel="stylesheet" type="text/css" href="/styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&
             family=Rubik:wght@300;400;500&family=Raleway:wght@200;300;400;500&
             family=Castoro&family=Roboto+Mono:wght@300;400;500&Roboto+Mono:wght
@@ -19,31 +17,30 @@
     <title>About me</title>
 </head>
 <body class="about">
-    <nav class="nav-section">
-        <ul class="nav-container">
-            <li class="nav-item"><a href="/" class="nav-link active">Work</a></li>
-            <li class="nav-item"><a href="/about" class="nav-link active">About</a></li>
+    <nav class="nav">
+        <ul class="nav__container">
+            <li class="nav__link"><a href="/" class="nav--wavy-underline">Work</a></li>
+            <li class="nav__link"><a href="/about" class="nav--wavy-underline">About</a></li>
         </ul>
     </nav>
-    <main class="main">
-        <div class="header-container">
-            <div class="header-item">
-            <p>A little bit</p>
-            <h1>About Me</h1>
-            <p>I was born and raised on the golden coast, California. Currently, I live in Los Angeles County and work with the amazing team at LoopLabs Solutions advancing boat rental software.</p>
+    <main class="about__main">
+        <div class="about__container">
+            <div class="about__item about__about-me">
+                <p>A little bit</p>
+                <h1 class="about__title">About Me</h1>
+                <p>I was born and raised on the golden coast, California. Currently, I live in Los Angeles County and work with the amazing team at LoopLabs Solutions advancing boat rental software.</p>
 
-            <p>I hold a degree in Computer Science. I am taking courses part-time in Data Analytics to expand my knowledge. Turning ideas into businesses became my passion in college so I kept at it.</p>
+                <p>I hold a degree in Computer Science. I am taking courses part-time in Data Analytics to expand my knowledge. Turning ideas into businesses became my passion in college so I kept at it.</p>
 
-            <p>Personally, I love hiking and hanging out with family. I try to get on the trails as much as possible. I am most happy wandering the outdoors.</p>
+                <p>Personally, I love hiking and hanging out with family. I try to get on the trails as much as possible. I am most happy wandering the outdoors.</p>
 
-            <p><a href="mailto:marc.rios1712@gmail.com">Email</a> • <a href="https://www.linkedin.com/in/marc-t-rios/">Linkedin</a> • <a href="https://github.com/mkurmarc">Github</a></p>
+                <p><a href="mailto:marc.rios1712@gmail.com">Email</a> • <a href="https://www.linkedin.com/in/marc-t-rios/">Linkedin</a> • <a href="https://github.com/mkurmarc">Github</a></p>
             </div>
-
-            <div class="header-item">
-            <img src="/images/valley_sunset.svg" width="560px" height="572px" class="sunset-illustration" alt="About Marc">
+            <div class="about__item about__image-container">
+                <img src="/images/about.png" width="560px" height="572px" class="about__image" alt="About Marc">
             </div>
         </div>
-
+        
         <section class="favorites">
             <div class="favorites-container">
                 <div class="favorites-item">
@@ -73,6 +70,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-item">

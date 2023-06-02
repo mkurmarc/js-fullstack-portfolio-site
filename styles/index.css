@@ -71,7 +71,7 @@ a {
     display: flex;
     align-content: center;
     flex-direction: column;
-    color: rgb(37, 37, 37);
+    justify-content: center;
 }
 
 /****** NAVBAR ******/
@@ -270,6 +270,7 @@ a {
     font-size: 3.1em;
     padding-bottom: 0.6em;
     font-weight: 600;
+    
 }
 
 .projects__item {
@@ -287,6 +288,7 @@ a {
 .projects__project-title {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .projects__project-title > h3 {
@@ -383,33 +385,6 @@ a {
     margin: auto;
 }
 
-/******* ABOUT ME PAGE *******/
-.about {
-    background-color: #8899a8;
-}
-
-.favorites {
-    display: flex;
-    justify-content: center;
-    padding: 6.75em 0 3rem 0;
-}
-.favorites-container {
-    display: flex;
-    justify-content: space-between;
-    width: 62em;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.favorites-item {
-    width: 20rem;
-    height: 10rem;
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9em;
-    color: whitesmoke;
-    letter-spacing: 0.75px;
-}
-
 /****** FOOTER ******/
 .footer {
     display: flex;
@@ -454,6 +429,71 @@ a {
 .footer__item:first-child > p {
     margin-top: 2px;
     padding-top: 0;
+}
+
+
+/******* ABOUT ME PAGE *******/
+.about {
+    background-color: #8899a8;
+}
+
+.about__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.about__item {
+    flex-basis: 40%;
+    max-width: 50%;
+}
+
+.about__about-me {
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Castoro', serif;
+    font-size: 0.9em;
+    letter-spacing: 0.75px;
+}
+
+.about__title {
+    font-family: 'Castoro', serif;
+    font-size: 3.1em;
+    padding-bottom: 0.6em;
+    font-weight: 600;
+}
+
+.about__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__image {
+    margin: 0;
+}
+
+.favorites {
+    display: flex;
+    justify-content: center;
+    padding: 6.75em 0 3rem 0;
+}
+.favorites-container {
+    display: flex;
+    justify-content: space-between;
+    width: 62em;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.favorites-item {
+    width: 20rem;
+    height: 10rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    color: whitesmoke;
+    letter-spacing: 0.75px;
 }
 
 /****** EFFECTS ******/
