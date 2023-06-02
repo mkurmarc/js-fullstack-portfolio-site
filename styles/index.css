@@ -60,9 +60,9 @@ a {
     text-decoration: none;
 }
 
-.work {
+.home {
     background: #65a19a;
-    margin: 0 4rem;
+    margin: 0 7.5rem;
 
 }
 
@@ -123,8 +123,8 @@ a {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     word-spacing: 2px;
-    margin-bottom: 10em;
     margin-top: 1rem;
+    gap: 1rem;
 }
 
 .header__item {
@@ -145,7 +145,7 @@ a {
 
 .header__headline {
     font-family: 'Castoro', serif;
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 0.95;
     margin-bottom: 0.5em;
     font-weight: 600;
@@ -255,6 +255,50 @@ a {
 
 }
 
+/******* ABOUT *******/
+.about {
+    background-color: #8899a8;
+}
+
+.about__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 7rem 0;
+}
+
+.about__item {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.about__about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.75px;
+}
+
+.about__title {
+    font-family: 'Castoro', serif;
+    font-size: 5em;
+    font-weight: 600;
+    line-height: 0.75;
+}
+
+.about__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__image {
+    margin: 0;
+}
+
 /****** FEATURED PROJECTS SECTION ******/
 .projects {
     display: flex;
@@ -263,6 +307,7 @@ a {
     margin-bottom: 7em;
     display: flex;
     flex-direction: column;
+    padding-top: 1rem;
 }
 
 .projects__title {
@@ -270,7 +315,6 @@ a {
     font-size: 3.1em;
     padding-bottom: 0.6em;
     font-weight: 600;
-    
 }
 
 .projects__item {
@@ -280,7 +324,7 @@ a {
     flex-basis: 100%;        
 }
 
-.project-item:last-child {
+.projects__item:last-child {
     border-bottom: 2px dotted rgb(37, 37, 37);
 }
 
@@ -429,71 +473,6 @@ a {
 .footer__item:first-child > p {
     margin-top: 2px;
     padding-top: 0;
-}
-
-
-/******* ABOUT ME PAGE *******/
-.about {
-    background-color: #8899a8;
-}
-
-.about__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 4rem;
-}
-
-.about__item {
-    flex-basis: 40%;
-    max-width: 50%;
-}
-
-.about__about-me {
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Castoro', serif;
-    font-size: 0.9em;
-    letter-spacing: 0.75px;
-}
-
-.about__title {
-    font-family: 'Castoro', serif;
-    font-size: 3.1em;
-    padding-bottom: 0.6em;
-    font-weight: 600;
-}
-
-.about__image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about__image {
-    margin: 0;
-}
-
-.favorites {
-    display: flex;
-    justify-content: center;
-    padding: 6.75em 0 3rem 0;
-}
-.favorites-container {
-    display: flex;
-    justify-content: space-between;
-    width: 62em;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.favorites-item {
-    width: 20rem;
-    height: 10rem;
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9em;
-    color: whitesmoke;
-    letter-spacing: 0.75px;
 }
 
 /****** EFFECTS ******/
