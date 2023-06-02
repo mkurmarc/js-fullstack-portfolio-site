@@ -158,12 +158,10 @@ a {
     word-spacing: 2px;
 }
 
-.header__image-container {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-
+/* maybe make flexbox */
+.header__image-container { 
+    flex-basis: 100%;
+    height: auto;
 }
 
 .header__image {
@@ -297,6 +295,19 @@ a {
 
 .about__image {
     margin: 0;
+}
+
+.about__contact-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.about__contact-container > a {
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 0.75px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
 }
 
 /****** FEATURED PROJECTS SECTION ******/
