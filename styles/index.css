@@ -228,7 +228,6 @@ a {
 
 .header__view-projects > a {
     color: whitesmoke;
-    letter-spacing: 1.3px;
     font-size: 1.3em;
     font-weight: 400;
     text-decoration: none;
@@ -263,7 +262,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 7rem 0;
+    padding: 5.5rem 0;
 }
 
 .about__item {
@@ -318,10 +317,10 @@ a {
     margin-bottom: 7em;
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 
-.projects__title {
+.projects__section-title {
     font-family: 'Castoro', serif;
     font-size: 3.1em;
     padding-bottom: 0.6em;
@@ -340,13 +339,13 @@ a {
 }
 
 /*** maybe add flex shrink so the image shrinks at a slower rate than the text */    
-.projects__project-title {
+.projects__project-title-container {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
 }
 
-.projects__project-title > h3 {
+.projects__project-title {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     font-size: 2.6em;
@@ -361,19 +360,19 @@ a {
 
 .projects__hidden-details-container {
     display: flex;
-    margin: 2rem 1rem 1rem 1rem;
-    /* flex-wrap: wrap; */
+    margin: 2rem 1rem 1rem 1rem;;
+    flex-wrap: wrap;
 }
 
 .projects__hidden-details {
     max-width: 50%;
 }
 
-.projects__hidden-details-container > .projects__hidden-details:last-child {
+/* .projects__hidden-details-container > .projects__hidden-details:last-child {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
 
 .projects__tech-specs-container {
     display: flex;
@@ -398,8 +397,7 @@ a {
     padding-bottom: 0.2em;
 }
 
-    /* project description */
-.projects__hidden-details > p {
+.projects__description {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     word-spacing: 1px;
@@ -407,7 +405,7 @@ a {
     font-size: 1.25rem;
     padding: 0 2em 0 1.7em;
 }
-    /* container for links to proj demo, live, ... */
+
 .projects__links-container {
     list-style: none;
     text-align: center;
@@ -421,6 +419,7 @@ a {
     letter-spacing: 1.5px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
+    font-size: 1.1em;
 }
 
 .projects__demo-gif {
@@ -506,7 +505,7 @@ a {
 }
 
 @media (max-width: 45em) {
-    .projects__project-title > h3 {
+    .projects__project-title {
         font-size: 1.7rem;
     }
 

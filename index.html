@@ -31,9 +31,10 @@
         <h6 class="header__intro">Welcome, I'm Marc Rios</h6>
         <h1 class="header__headline">A Software Engineer from the West.</h1>
         <p class="header__bio">
-          I enjoy building complete web applications with JavaScript and Python.
-          I design the user interface, plan the backend, code the app, test, and
-          put it into production. 
+          I specialize in building complete web applications using JavaScript and 
+          Python. From designing the user interface to coding, testing, and deployment,
+          I strive to develop innovative software solutions that enrich people's 
+          lives. Let's build something remarkable together.        
         </p>
         <p class="header__view-projects">
           <a href="#projects">View Projects</a>
@@ -63,9 +64,15 @@
       <div class="about__item about__about-me">
           <p>A little bit</p>
           <h1 class="about__title">About Me</h1>
-          <p>I was born and raised on the golden coast, California. Currently, I live in Los Angeles County and work with the amazing team at LoopLabs Solutions advancing boat rental software.</p>
-          <p>I hold a degree in Computer Science. I am taking courses part-time in Data Analytics to expand my knowledge. Turning ideas into businesses became my passion in college so I kept at it.</p>
-          <p>Personally, I love hiking and hanging out with family. I try to get on the trails as much as possible. I am most happy wandering the outdoors.</p>
+          <p>I grew up on California's golden coast and currently reside in Los 
+            Angeles County, working with the exceptional team at LoopLabs Solutions 
+            to advance Harbor-In, a port rental software.</p>
+          <p>With a degree in Computer Science, I continuously expand my knowledge 
+            by taking part-time courses in Data Analytics. My passion for turning 
+            ideas into businesses began in college and has driven me ever since.</p>
+          <p>In my personal life, I find joy in hiking and spending quality time
+            with my family. Exploring the trails brings me the utmost happiness 
+            and allows me to connect with the great outdoors.</p>
           <p class="about__contact-container">
             <a href="mailto:marc.rios1712@gmail.com">Email</a> • 
             <a href="https://www.linkedin.com/in/marc-t-rios/">Linkedin</a> • 
@@ -75,18 +82,17 @@
     </div>
   
     <section class="projects" id="projects">
-      <h2 class="projects__title">Featured Projects</h2>
-      <!-- first featured project -->
+      <h2 class="projects__section-title">Featured Projects</h2>
+<!-- first featured project -->
       <div class="projects__item">
-        <div class="projects__project-title">
-          <h3>Triple Crown Races Analysis with ML</h3>
+        <div class="projects__project-title-container">
+          <h3 class="projects__project-title">Dental File Transfer Portal API</h3>
           <img
             src="images/chevron-down.png"
-            alt="arrow to expand details of project 1"
+            alt="arrow to expand details of project"
             class="projects__project-title-arrow"
           />
         </div>
-        <!-- collapsable/hidden project info section below -->
         <div class="projects__hidden-details-container">
           <div class="projects__hidden-details">
             <div>
@@ -98,18 +104,129 @@
             </div>
             <div>
               <ul class="projects__links-container">
-                <li class="projects__link">Demo</li>
-                <li class="projects__link">Live</li>
-                <li class="projects__link">Github</li>
+                <li class="projects__link"><a href="https://triple-crown-race-webapp.herokuapp.com/dashboard">Live</a></li>
+                <li class="projects__link"><a href="https://github.com/mkurmarc">Github</a></li>
+                <!-- <li class="projects__link"><a href="">Demo</a></li> -->
               </ul>
             </div>
           </div>
           <div class="projects__hidden-details">
-            <p>
-              The dashboard harnessed 'Triple Crown' horse race statistics and 
-              weather forecasts, combining advanced machine learning methods, 
-              including linear regression, to provide end users with assistance 
-              with race predictions.
+            <p class="projects__description">
+              Developed a secure RESTful API enabling user account creation, login, 
+              and encrypted patient file uploads to a database, accessible for admin 
+              viewing and downloading, employing password hashing and protected routes.
+            </p>
+            <div class="projects__tech-specs-container">
+              <ul class="projects__tech-specs">
+                <li class="projects__tech-specs-title">Languages</li>
+                <li>Python</li>
+                <li>SQL</li>
+              </ul>
+              <ul class="projects__tech-specs">
+                <li class="projects__tech-specs-title">Frameworks</li>
+                <li>FastAPI</li>
+                <li>Pydantic</li>
+                <li>Postgres</li>
+              </ul>
+              <ul class="projects__tech-specs">
+                <li class="projects__tech-specs-title">Packages</li>
+                <li>Uvicorn</li>
+                <li>SQLAlchemy</li>
+                <li>Cryptography</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- second featured project -->            
+      <div class="projects__item">
+        <div class="projects__project-title-container">
+          <h3 class="projects__project-title">Social Media API</h3>
+          <img
+            src="images/chevron-down.png"
+            alt="arrow to expand details of project"
+            class="projects__project-title-arrow"
+          />
+        </div>
+        <div class="projects__hidden-details-container hidden">
+          <div class="projects__hidden-details">
+            <div>
+              <img
+                src="images/project-business-plan-design.jpg"
+                alt=""
+                class="projects__demo-gif"
+              />
+            </div>
+            <div>
+              <ul class="projects__links-container">
+                <li class="projects__link"><a href="https://dental-file-portal-api.herokuapp.com/docs">Live</a></li>
+                <li class="projects__link"><a href="https://github.com/mkurmarc/dental_upload_app_mac">Github</a></li>
+                <!-- <li class="projects__link"><a href="">Demo</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="projects__hidden-details">
+            <p class="projects__description">
+              The backend RESTful API offers users the ability to create profiles, 
+              manage their posts (CRUD), and engage with other users' posts by liking them. It ensures security and 
+              protection through user registration and authentication, utilizing 
+              JWT tokens.
+            </p>
+            <div class="projects__tech-specs-container">
+              <ul class="projects__tech-specs">
+                <li class="projects__tech-specs-title">Languages</li>
+                <li>Python</li>
+                <li>SQL</li>
+              </ul>
+              <ul class="projects__tech-specs">
+                <li class="projects__tech-specs-title">Frameworks</li>
+                <li>FastAPI</li>
+                <li>Pydantic</li>
+                <li>Postgres</li>
+              </ul>
+              <ul class="projects__tech-specs">
+                <li class="projects__tech-specs-title">Packages</li>
+                <li>Uvicorn</li>
+                <li>SQLAlchemy</li>
+                <li>Alembic</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- third featured project -->
+      <div class="projects__item">
+        <div class="projects__project-title-container">
+          <h3 class="projects__project-title">Triple Crown Races Analysis with ML</h3>
+          <img
+            src="images/chevron-down.png"
+            alt="arrow to expand details of project 1"
+            class="projects__project-title-arrow"
+          />
+        </div>
+        <!-- collapsable/hidden project info section below -->
+        <div class="projects__hidden-details-container hidden">
+          <div class="projects__hidden-details">
+            <div>
+              <img
+                src="images/project-business-plan-design.jpg"
+                alt=""
+                class="projects__demo-gif"
+              />
+            </div>
+            <div>
+              <ul class="projects__links-container">
+                <li class="projects__link"><a href="https://triple-crown-race-webapp.herokuapp.com/dashboard">Live</a></li>
+                <!-- <li class="projects__link"><a href="https://github.com/mkurmarc">Github</a></li> -->
+                <li class="projects__link"><a href="">Demo</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="projects__hidden-details">
+            <p class="projects__description">
+              Web application integrates Triple Crown race data, track conditions, and 
+              machine learning to deliver an intuitive dashboard with comprehensive 
+              statistics and accurate predictions for informed betting strategies.
             </p>
             <div class="projects__tech-specs-container">
               <ul class="projects__tech-specs">
@@ -133,119 +250,7 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- second featured project -->
-      <div class="projects__item">
-        <div class="projects__project-title">
-          <h3>Social Media API</h3>
-          <img
-            src="images/chevron-down.png"
-            alt="arrow to expand details of project 2"
-            class="projects__project-title-arrow"
-          />
-        </div>
-        <div class="projects__hidden-details-container hidden">
-          <div class="projects__hidden-details">
-            <div>
-              <img
-                src="images/project-business-plan-design.jpg"
-                alt=""
-                class="projects__demo-gif"
-              />
-            </div>
-            <div>
-              <ul class="projects__links-container">
-                <li class="projects__link">Demo</li>
-                <li class="projects__link">Live</li>
-                <li class="projects__link">Github</li>
-              </ul>
-            </div>
-          </div>
-          <div class="projects__hidden-details">
-            <p>
-              The backend RESTful API offers users the ability to create profiles, 
-              manage their posts (CRUD), and engage with other users' posts by liking them. It ensures security and 
-              protection through user registration and authentication, utilizing 
-              JWT tokens.
-            </p>
-            <div class="projects__tech-specs-container">
-              <ul class="projects__tech-specs">
-                <li class="projects__tech-specs-title">Languages</li>
-                <li>Python</li>
-                <li>SQL</li>
-              </ul>
-              <ul class="projects__tech-specs">
-                <li class="projects__tech-specs-title">Frameworks</li>
-                <li>FastAPI</li>
-                <li>Pydantic</li>
-                <li>Postgres</li>
-              </ul>
-              <ul class="projects__tech-specs">
-                <li class="projects__tech-specs-title">Packages</li>
-                <li>Pydantic</li>
-                <li>SQLAlchemy</li>
-                <li>Alembic</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- third featured project -->
-      <div class="projects__item">
-        <div class="projects__project-title">
-          <h3>Name of Project Three</h3>
-          <img
-            src="images/chevron-down.png"
-            alt="arrow to expand details of project 3"
-            class="projects__project-title-arrow"
-          />
-        </div>
-        <div class="projects__hidden-details-container hidden">
-          <div class="projects__hidden-details">
-            <div>
-              <img
-                src="images/project-business-plan-design.jpg"
-                alt=""
-                class="projects__demo-gif"
-              />
-            </div>
-            <div>
-              <ul class="projects__links-container">
-                <li class="projects__link">Demo</li>
-                <li class="projects__link">Live</li>
-                <li class="projects__link">Github</li>
-              </ul>
-            </div>
-          </div>
-          <div class="projects__hidden-details">
-            <p>
-              This is the detailed desritpion of the project, and will be
-              placed at the right of the demo gif. The number of lines is
-              variable but im.
-            </p>
-            <div class="projects__tech-specs-container">
-              <ul class="projects__tech-specs">
-                <li class="projects__tech-specs-title">Languages</li>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-              </ul>
-              <ul class="projects__tech-specs">
-                <li class="projects__tech-specs-title">Frameworks</li>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-              </ul>
-              <ul class="projects__tech-specs">
-                <li class="projects__tech-specs-title">Packages</li>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div>      
     </section>
     <div class="divider">
       <img

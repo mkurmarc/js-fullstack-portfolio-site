@@ -1,6 +1,8 @@
 "use strict";
 
-const projectTitles = document.querySelectorAll(".projects__project-title");
+const projectTitles = document.querySelectorAll(
+  ".projects__project-title-container"
+);
 
 const hiddenSections = document.querySelectorAll(
   ".projects__hidden-details-container"
