@@ -261,7 +261,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
     padding: 3.5rem 0;
     margin-top: 3rem;
 }
@@ -494,6 +494,10 @@ a {
 
 /* ########  CHANGE QUERIES TO EM SIZE, NOT PX OR REM  ######### */
 /****** ONLY MEDIA QUERIES ******/
+@media (max-width: 1470px) {
+
+}
+
 
 @media (max-width: 43.06em) {
     .header-container {
