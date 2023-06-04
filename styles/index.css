@@ -115,6 +115,11 @@ a {
 .nav--wavy-underline:hover::after {
     transform: scaleX(1);
 }
+
+.nav--wavy-underline:active {
+    color: red;
+    text-decoration: underline;
+}
   
 /****** HEADER SECTION ******/
 .header {
