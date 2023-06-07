@@ -658,8 +658,6 @@ a {
     }
 }
 
-
-
 @media (max-width: 1100px) {
     .home {
         margin: 0 5rem;
@@ -715,7 +713,6 @@ a {
         padding: 0 1em 0 1em;
     }
 }
-
 
 @media (max-width: 1024px) {
     .home {
@@ -1068,9 +1065,7 @@ a {
     }
 }
 
-/* TO DO:
-    - 767px is the flex column breakpoint
-*/
+/*  767px is the flex column breakpoint */
 @media (max-width: 767px) {
     .home {
         margin: 0 4rem;
@@ -1236,3 +1231,267 @@ a {
     }
 }
 
+@media (max-width: 701px) {
+    .home {
+        margin: 0 3rem;
+    }
+
+    .projects__image {
+        width: 25rem;
+        height: 18rem;
+    }
+
+    .projects__description {
+        line-height: 1.25;
+
+    }
+
+    .projects__tech-specs-container {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 665px) {
+    .home {
+        margin: 0 2rem;
+    }
+
+    .nav__container {
+        gap: 1.8rem;
+    }
+
+    .header__headline {
+        font-size: 3.8rem;
+    }
+
+    .about__title {
+        font-size: 3.5rem;
+    }
+
+    .about__container {
+        margin: 1rem 0 0 0;
+        gap: 0;
+    }
+
+    .about__image-container {
+        padding: 2rem 0;
+    }
+
+    .projects__section-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 629px) {
+    .home {
+        margin: 0 1rem;
+    }
+
+    .nav__container {
+        gap: 1.5rem;
+    }
+
+    .nav__link {
+        font-size: 1.1rem;
+    }
+
+    .header__headline {
+        font-size: 3.25rem;
+    }
+
+    .header__view-projects > a {
+        font-size: 1.1em;
+    }
+
+    .header__bio {
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+    }
+
+    .about__title {
+        font-size: 3rem;
+    }
+
+    .about__about-me {
+        font-size: 1rem;
+    }
+
+    .projects__section-title {
+        font-size: 3rem;
+    }
+
+    .projects__project-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:618px) {
+    .projects__project-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 592px) {
+    .projects__hidden-details-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .projects__hidden-details {
+        max-width: 100%;
+        gap: 1.5rem;
+    }
+
+    .projects__project-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Samsung Galaxy S8+ */
+@media (max-width: 360px) {
+    .nav__container {
+        gap: 1.4rem;
+    }
+
+    .nav__link {
+        font-size: 0.85rem;
+    }
+
+    .header {
+        margin: 0.5rem 0;
+    }
+
+    .header__intro {
+        font-size: 0.6rem;
+    }
+    .header__headline {
+        font-size: 2.5rem;
+    }
+
+    .header__bio {
+        font-size: 0.75rem;
+    }
+
+    .header__view-projects > a {
+        font-size: 0.85em;
+    }
+
+    .header__view-projects > a::after {
+        margin-top: 7px;
+        background-size: 1.2em 1.2em;
+        height: 1.2em;
+        width: 1.2em;
+    }
+
+    .about__image-container {
+        padding: 1.5rem 0;
+    }
+
+    .about__about-me {
+        font-size: 0.75rem;
+        letter-spacing: 0.3px;
+    }
+
+    .about__contact-container {
+        gap: 0.7rem;
+    }
+
+    .about__contact-container > a {
+        font-size: 0.75rem;
+    }
+
+    .about__title {
+        font-size: 2.5rem;
+    }
+
+    .projects {
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects__section-title {
+        font-size: 2.2rem;
+    }
+
+    .projects__item {
+        padding: 1.2rem 0 1.2rem 0;
+    }
+
+    .projects__project-title {
+        font-size: 0.95rem;
+        letter-spacing: 0.2px;
+        word-spacing: 0.2px;
+    }
+
+    .projects__image {
+        width: 100%;
+        height: 16rem;
+    }
+
+    .projects__link {
+        font-size: 0.75rem;
+    }
+
+    .projects__hidden-details-container {
+        margin: 2rem 0.25rem 1rem 0.25rem;
+    }
+
+    .projects__hidden-details {
+        gap: 1rem;
+    }
+
+    .projects__description {
+        font-size: 0.75rem;
+        line-height: 1.25;
+    }
+
+    .projects__tech-specs-title {
+        font-size: 0.7rem;
+    }
+
+    .projects__tech-specs {
+        font-size: 0.7rem;
+        padding: 0.25rem;
+    }
+
+    .projects__project-title-arrow {
+        margin: 0.2em 0.5em 0 0;
+        height: 1.3em;
+        width: 1.3em;
+    }
+
+    .footer {
+        margin: 2rem 0 1rem 0;
+        height: auto;
+    }
+
+    .footer__item {
+        height: 7rem;
+    }
+
+    .footer__item-header {
+        font-size: 0.85rem;
+    }
+
+    .footer__link {
+        font-size: 0.7rem;
+        padding-top: 8px;
+    }
+
+    .footer__link::after {
+        margin: 1px 2px 0 2px;
+        height: 18px;
+        width: 18px;
+        background-size: 18px 18px;
+    }
+
+    .footer__item:first-child {
+        font-size: 0.6rem;
+        word-spacing: 0.25px;
+        line-height: 1.25;
+    }
+
+    .footer__item:first-child p:last-child {
+        margin: 0.4rem 0 0 0;
+    }
+}
