@@ -146,7 +146,7 @@ a {
 
 .header__headline {
     font-family: 'Castoro', serif;
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 0.95;
     margin-bottom: 0.5em;
     font-weight: 600;
@@ -263,9 +263,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    /* padding: 3.5rem 0; */
-    padding-top: 3.5rem;
-    margin-top: 3rem;
+    margin-top: 4.6rem;
 }
 
 .about__item {
@@ -276,7 +274,7 @@ a {
 .about__about-me {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
     letter-spacing: 0.75px;
@@ -284,7 +282,7 @@ a {
 
 .about__title {
     font-family: 'Castoro', serif;
-    font-size: 5em;
+    font-size: 4.55em;
     font-weight: 600;
     line-height: 0.75;
 }
@@ -528,6 +526,10 @@ a {
 /* ########  CHANGE QUERIES TO EM SIZE, NOT PX OR REM  ######### */
 /****** ONLY MEDIA QUERIES ******/
 @media (max-width: 1428px) {
+    .home {
+        margin: 0 2rem;
+    }
+
     .header__intro {
         font-size: 1.1rem;
     }
@@ -659,9 +661,6 @@ a {
 }
 
 @media (max-width: 1100px) {
-    .home {
-        margin: 0 5rem;
-    }
 
     .header__headline {
         font-size: 3.5rem;
@@ -715,9 +714,6 @@ a {
 }
 
 @media (max-width: 1024px) {
-    .home {
-        margin: 0 5rem;
-    }
 
     .header__intro {
         font-size: 0.8rem;
@@ -744,8 +740,8 @@ a {
     }
 
     .about__about-me {
-        gap: 1.4rem;
         font-size: 0.9rem;
+        gap: 1rem;
     }
 
     .about__contact-container > a {
@@ -780,10 +776,6 @@ a {
 }
 
 @media (max-width: 1023px) {
-    .home {
-        margin: 0 5rem;
-    }
-
     .main {
         margin-top: 0;
     }
@@ -817,8 +809,8 @@ a {
     }
 
     .about__about-me {
-        gap: 1.4rem;
         font-size: 0.9rem;
+        line-height: 1.4;
     }
 
     .about__contact-container > a {
@@ -931,145 +923,8 @@ a {
     }
 }
 
+/* the flex column breakpoint */
 @media (max-width: 832px) {
-    .home {
-        margin: 0 5rem;
-    }
-
-    .nav__link {
-        font-size: 1em;
-    }
-
-    .header__item--margin-top {
-        margin-top: 5rem;
-    }
-
-    .header__intro {
-        font-size: 0.7rem;
-    }
-
-    .header__headline {
-        font-size: 3rem;
-    }
-
-    .header__bio {
-        font-size: 0.8rem;
-        line-height: 1.5;
-    }
-
-    .header__teaser {
-        font-size: 0.8rem;
-    }
-
-    .header__about-me a {
-        font-size: 0.6rem;
-    }
-
-    .header__about-me a::after {
-        margin-left: 3px;
-        margin-top: 1px;
-    }
-
-    .header__view-projects > a {
-        margin-top: 1rem;
-        font-size: 0.9em;
-    }
-
-    .about__title {
-        font-size: 3rem;
-    }
-
-    .about__about-me {
-        gap: 1.2rem;
-        font-size: 0.8rem;
-        letter-spacing: 0.5px;
-    }
-
-    .about__contact-container {
-        gap: 0.5rem;
-    }
-
-    .about__contact-container > a {
-        font-size: 0.8rem;
-    }
-
-    .projects__section-title {
-        font-size: 3rem;
-    }
-
-    .projects__project-title {
-        font-size: 1.5rem;
-    }
-
-    .projects__project-title-arrow {
-        margin: 0.4em 0.5em 0 0;
-        height: 1.8em;
-        width: 1.8em;
-    }
-
-    .projects__hidden-details-container {
-        gap: 2rem;
-    }
-
-    .projects__image {
-        width: 25rem;
-        height: 18rem;
-    }
-
-    .projects__links-container {
-        justify-content: center;
-        gap: 1.5em;
-        padding-left: 0;
-    }
-
-    .projects__link {
-        font-size: 0.8rem;
-    }
-
-    .projects__description {
-        font-size: 0.8rem;
-        line-height: 2;
-    }
-
-    .projects__tech-specs-title {
-        font-size: 0.7rem;
-    }
-
-    .projects__tech-specs {
-        font-size: 0.7rem;
-        padding: 0 1em 0 1em;
-    }
-
-    .footer {
-        margin: 4rem 0 2rem 0;
-    }
-
-    .footer__container {
-        justify-content: space-between;
-    }
-
-    .footer__item {
-        flex-basis: 40%;
-    }
-
-    .footer__item-header {
-        font-size: 1rem;
-    }
-
-    .footer__link {
-        font-size: 0.8rem;
-    }
-
-    .footer__item:first-child > p {
-        margin-top: 4px;
-    }
-}
-
-/*  767px is the flex column breakpoint */
-@media (max-width: 767px) {
-    .home {
-        margin: 0 4rem;
-    }
 
     .nav__link {
         font-size: 1.2rem;
@@ -1167,7 +1022,7 @@ a {
     }
 
     .projects__project-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .projects__image {
@@ -1205,6 +1060,12 @@ a {
         line-height: 1.25;
     }
 
+    .projects__project-title-arrow {
+        margin: 0.7em 0.5em 0 0;
+        height: 2em;
+        width: 2em;
+    }
+
     .footer {
         margin: 3rem 0 2rem 0;
     }
@@ -1232,10 +1093,6 @@ a {
 }
 
 @media (max-width: 701px) {
-    .home {
-        margin: 0 3rem;
-    }
-
     .projects__image {
         width: 25rem;
         height: 18rem;
@@ -1418,7 +1275,7 @@ a {
     }
 
     .projects__project-title {
-        font-size: 0.95rem;
+        font-size: 1.1rem;
         letter-spacing: 0.2px;
         word-spacing: 0.2px;
     }
@@ -1429,7 +1286,7 @@ a {
     }
 
     .projects__link {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
     }
 
     .projects__hidden-details-container {
@@ -1441,16 +1298,16 @@ a {
     }
 
     .projects__description {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         line-height: 1.25;
     }
 
     .projects__tech-specs-title {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .projects__tech-specs {
-        font-size: 0.7rem;
+        font-size: 0.85rem;
         padding: 0.25rem;
     }
 
@@ -1470,11 +1327,11 @@ a {
     }
 
     .footer__item-header {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     .footer__link {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         padding-top: 8px;
     }
 
@@ -1493,5 +1350,11 @@ a {
 
     .footer__item:first-child p:last-child {
         margin: 0.4rem 0 0 0;
+    }
+}
+
+@media (max-width: 392px) {
+    .projects__project-title {
+        font-size: 1rem;
     }
 }
