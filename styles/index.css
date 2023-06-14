@@ -1347,14 +1347,14 @@ a {
     }
 }
 
-/* Samsung Galaxy S8+ */
-@media (max-width: 360px) {
+/* Samsung Galaxy: S8+, S20 Ultra */
+@media (max-width: 412px) {
     .nav__container {
-        gap: 1.4rem;
+        gap: 2rem;
     }
 
     .nav__link {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
     }
 
     .header {
@@ -1362,25 +1362,25 @@ a {
     }
 
     .header__intro {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
     .header__headline {
         font-size: 2.5rem;
     }
 
     .header__bio {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
     }
 
     .header__view-projects > a {
-        font-size: 0.85em;
+        font-size: 0.95rem;
     }
 
     .header__view-projects > a::after {
-        margin-top: 7px;
-        background-size: 1.2em 1.2em;
-        height: 1.2em;
-        width: 1.2em;
+        margin-top: 3px;
+        background-size: 1.5em 1.5em;
+        height: 1.5em;
+        width: 1.5em;
     }
 
     .about__image-container {
@@ -1388,7 +1388,7 @@ a {
     }
 
     .about__about-me {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         letter-spacing: 0.3px;
     }
 
