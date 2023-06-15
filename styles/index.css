@@ -67,7 +67,7 @@ a {
 }
 
 .main {
-    margin: 3em 0 0 0;
+    margin: 4em 0 0 0;
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -417,10 +417,11 @@ a {
 
 .projects__links-container {
     list-style: none;
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 0.75em;
+    padding-left: 0;
+    gap: 5rem;
 }
     
 .projects__link {
@@ -1034,6 +1035,7 @@ a {
 
     .projects__links-container {
         gap: 3em;
+        padding-left: 0;
     }
 
     .projects__link {
@@ -1110,7 +1112,7 @@ a {
     }
 }
 
-@media (max-width: 665px) {
+@media (max-width: 678px) {
     .home {
         margin: 0 2rem;
     }
@@ -1138,6 +1140,10 @@ a {
 
     .projects__section-title {
         font-size: 3.5rem;
+    }
+
+    .projects__project-title {
+        font-size: 1.8rem;
     }
 }
 
@@ -1207,7 +1213,7 @@ a {
 }
 
 /* Samsung Galaxy: S8+, S20 Ultra */
-@media (max-width: 412px) {
+@media (max-width: 446px) {
     .nav__container {
         gap: 2rem;
     }
