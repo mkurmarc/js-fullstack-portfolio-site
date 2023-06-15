@@ -56,7 +56,7 @@ html {
     font-size: 18px;
 }
 
-a {
+a, a:hover, a:visited, a:active, a:focus {
     text-decoration: none;
 }
 
@@ -937,17 +937,9 @@ a {
         font-size: 1.2rem;
     }
 
+    /* this is to remove underline in phones */
     .nav--underline::after {
         content: none;
-        /* position: none;
-        width: none;
-        height: none;
-        bottom: none;
-        left: none;
-        background-color: none;
-        transform: none;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out; */
     } 
 
     .header {
