@@ -92,7 +92,6 @@ a {
     font-family: 'Rubik', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
-
 }
 
 .nav--underline {
@@ -111,12 +110,17 @@ a {
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-}
+} 
 
 .nav--underline:hover::after {
     transform: scaleX(1);
 }
-  
+
+.nav--underline:focus::after {
+    transform: none;
+}
+
+ 
 /****** HEADER SECTION ******/
 .header {
     display: flex;
@@ -931,8 +935,20 @@ a {
 
     .nav__link {
         font-size: 1.2rem;
-
     }
+
+    .nav--underline::after {
+        content: none;
+        /* position: none;
+        width: none;
+        height: none;
+        bottom: none;
+        left: none;
+        background-color: none;
+        transform: none;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out; */
+    } 
 
     .header {
         flex-direction: column;
