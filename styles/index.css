@@ -62,8 +62,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
 .home {
     background: #65a19a;
-    margin: 0 9rem;
-
+    margin: 0 20rem;
 }
 
 .main {
@@ -115,11 +114,6 @@ a, a:hover, a:visited, a:active, a:focus {
 .nav--underline:hover::after {
     transform: scaleX(1);
 }
-
-.nav--underline:focus::after {
-    content: none;
-}
-
  
 /****** HEADER SECTION ******/
 .header {
