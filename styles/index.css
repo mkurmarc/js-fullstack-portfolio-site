@@ -938,7 +938,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
     /* this is to remove underline in phones */
     .nav--underline::after {
-        content: none;
+        background-color: #65a19a;
     } 
 
     .header {
