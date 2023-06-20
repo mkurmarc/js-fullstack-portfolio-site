@@ -6,10 +6,10 @@ This is a simple portfolio website built using HTML, CSS, and JavaScript. It ser
 - Projects page highlighting my featured projects with descriptions and links.
 - About section providing more information about my background, education, and experience.
 
-### Link to Portfolio
+### Link to Portfolio:
 www.derios.dev
 
-### Contact
+### Contact:
 For any inquiries or questions, please feel free to reach out to me via email at [marc@derios.dev]
 
 Thank you for visiting my portfolio website!
