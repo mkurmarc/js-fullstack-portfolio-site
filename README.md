@@ -10,6 +10,6 @@ This is a simple portfolio website built using HTML, CSS, and JavaScript. It ser
 www.derios.dev
 
 ### Contact:
-For any inquiries or questions, please feel free to reach out to me via email at [marc@derios.dev]
+For any inquiries or questions, please feel free to reach out to me via email at marc@derios.dev
 
 Thank you for visiting my portfolio website!
