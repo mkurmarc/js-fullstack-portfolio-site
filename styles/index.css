@@ -611,6 +611,10 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 @media (max-width: 1280px) {
+    .home__container {
+        margin: 0 2rem;
+    }
+
     .header__headline {
         font-size: 4rem;
     }
@@ -1149,6 +1153,10 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 @media (max-width: 629px) {
+    .home__container {
+        margin: 0 1.1rem;
+    }
+
     .nav__container {
         gap: 1.5rem;
     }
