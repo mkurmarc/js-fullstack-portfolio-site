@@ -478,8 +478,6 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .footer__item {
-    width: 20rem;
-    height: 10rem;
     font-family: 'Raleway', sans-serif;
     color: whitesmoke;
     letter-spacing: 0.75px;
@@ -492,7 +490,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .footer__link {
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
 }
 
 .footer__link--transform {
@@ -531,6 +529,10 @@ a, a:hover, a:visited, a:active, a:focus {
     padding-top: 0;
 }
 
+.footer--margin-right {
+    margin-right: 10rem;
+}
+
 /****** EFFECTS ******/
 .hidden {
     display: none;
@@ -539,10 +541,6 @@ a, a:hover, a:visited, a:active, a:focus {
 /* ########  CHANGE QUERIES TO EM SIZE, NOT PX OR REM  ######### */
 /****** ONLY MEDIA QUERIES ******/
 @media (max-width: 1428px) {
-    .home {
-        margin: 0 2rem;
-    }
-
     .header__intro {
         font-size: 1.1rem;
     }
@@ -904,11 +902,6 @@ a, a:hover, a:visited, a:active, a:focus {
         padding: 0 1em 0 1em;
     }
 
-    .footer__item {
-        width: 18rem;
-        height: 10rem;
-    }
-
     .footer__item-header {
         font-size: 1.2em;
     }
@@ -1091,11 +1084,6 @@ a, a:hover, a:visited, a:active, a:focus {
         margin: 3rem 0 2rem 0;
     }
 
-    .footer__item {
-        width: 18rem;
-        height: 8.5rem;
-    }
-
     .footer__item-header {
         font-size: 1.2rem;
     }
@@ -1130,10 +1118,6 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 @media (max-width: 678px) {
-    .home {
-        margin: 0 2rem;
-    }
-
     .nav__container {
         gap: 1.8rem;
     }
@@ -1165,10 +1149,6 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 @media (max-width: 629px) {
-    .home {
-        margin: 0 1rem;
-    }
-
     .nav__container {
         gap: 1.5rem;
     }
@@ -1349,10 +1329,6 @@ a, a:hover, a:visited, a:active, a:focus {
     .footer {
         margin: 2rem 0 1rem 0;
         height: auto;
-    }
-
-    .footer__item {
-        height: 7rem;
     }
 
     .footer__item-header {
