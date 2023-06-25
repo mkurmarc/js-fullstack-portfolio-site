@@ -62,10 +62,19 @@ a, a:hover, a:visited, a:active, a:focus {
 
 .home {
     background: #65a19a;
-    margin: 0 20rem;
 }
 
-.main {
+.home__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.main{
+    max-width: 65.5rem;
     margin: 4em 0 0 0;
     display: flex;
     align-content: center;
@@ -123,7 +132,7 @@ a, a:hover, a:visited, a:active, a:focus {
     font-weight: 500;
     word-spacing: 2px;
     margin-top: 2rem;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .header__item {
@@ -447,6 +456,7 @@ a, a:hover, a:visited, a:active, a:focus {
 .divider {
     width: 100%;
     margin: auto;
+    margin: 1.75rem 0;
 }
     /* the criss-cross design */
 .divider__image {
@@ -457,13 +467,14 @@ a, a:hover, a:visited, a:active, a:focus {
 /****** FOOTER ******/
 .footer {
     margin: 6.75em 0 3rem 0;
+    width: 100%;
 }
 
 .footer__container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .footer__item {
@@ -481,7 +492,7 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 .footer__link {
-    padding-top: 10px;
+    padding-top: 0.5rem;
 }
 
 .footer__link--transform {
@@ -995,7 +1006,6 @@ a, a:hover, a:visited, a:active, a:focus {
     .about__container {
         flex-direction: column;
         align-items: center;
-        gap: 1.75rem;
         padding-top: 0;
         margin-top: 4rem;
     }
@@ -1138,11 +1148,11 @@ a, a:hover, a:visited, a:active, a:focus {
 
     .about__container {
         margin: 1rem 0 0 0;
-        gap: 0;
+        gap: 1rem;
     }
 
     .about__image-container {
-        padding: 2rem 0;
+        padding: 3rem 0 3rem 0;
     }
 
     .projects__section-title {
@@ -1261,7 +1271,7 @@ a, a:hover, a:visited, a:active, a:focus {
     }
 
     .about__image-container {
-        padding: 1.5rem 0;
+        padding: 1.5rem 0 2.5rem 0;
     }
 
     .about__about-me {
@@ -1351,7 +1361,7 @@ a, a:hover, a:visited, a:active, a:focus {
 
     .footer__link {
         font-size: 0.75rem;
-        padding-top: 8px;
+        padding-top: 0.4rem;
     }
 
     .footer__link::after {
