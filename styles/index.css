@@ -73,7 +73,7 @@ a, a:hover, a:visited, a:active, a:focus {
     max-width: 75rem; 
 }
 
-.main{
+.main {
     max-width: 65.5rem;
     margin: 4em 0 0 0;
     display: flex;
@@ -468,6 +468,7 @@ a, a:hover, a:visited, a:active, a:focus {
 .footer {
     margin: 6.75em 0 3rem 0;
     width: 100%;
+    max-width: 65.5rem;
 }
 
 .footer__container {
